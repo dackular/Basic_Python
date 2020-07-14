@@ -1,0 +1,13 @@
+Value Tunnelid (\d+)
+Value Local (\d+\.\d+\.\d+\.\d+\/\d+)
+Value Remote (\d+\.\d+\.\d+\.\d+\/\d+)
+Value fvrfivrf (\w+\/\w+)
+Value Status (\w+)
+Value Encr (\S+)
+Value keysize (\S+)
+Value PRF (\S+)
+
+Start
+ ^${Tunnelid}\s+${Local}\s+${Remote}\s+${fvrfivrf}\s+${Status}\s*
+ ^\s+Encr:\s+${Encr}\s+ -> Record
+ 

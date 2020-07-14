@@ -1,0 +1,24 @@
+RAT-ISR4431-RA-VPN-NonPCI-01#show crypto ikev2 sa
+ IPv4 Crypto IKEv2  SA 
+
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+5         192.168.145.61/4500   54.254.246.9/4500     none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA256, Hash: SHA256, DH Grp:2, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 28800/21365 sec
+
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+6         192.168.145.61/4500   52.77.182.115/4500    none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA256, Hash: SHA256, DH Grp:2, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 28800/21206 sec
+
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+4         192.168.145.61/4500   137.116.148.138/4500  none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA256, Hash: SHA256, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 28800/3938 sec
+
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+1         192.168.145.61/4500   35.242.24.242/4500    none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA256, Hash: SHA256, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 36000/28865 sec
+
+ IPv6 Crypto IKEv2  SA 

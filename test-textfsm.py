@@ -4,11 +4,7 @@ import textfsm
 import pandas as pd
 import io
 import os
-
-
 from sqlalchemy import create_engine
-
-
 
 def read_textfile(base_dir=None, template_file=None):
     # Load the input file to a variable
@@ -52,7 +48,7 @@ def textfile_to_csv(base_dir=None, template_file=None, dest_file=None):
 #ipsec_template_file = './scripts/cisco_ios_show_crypto_ipsec_sa.textfsm'
 #ipsec_df = textfile_to_df(base_dir=ipsec_base_dir, template_file=ipsec_template_file)
 
-ikev2_base_dir = './'
+ikev2_base_dir = open('./'
 ikev2_template_file = './cisco_ios_show_crypto_ikev2_sa.textfsm'
 ikev2_df = textfile_to_df(base_dir=ikev2_base_dir, template_file=ikev2_template_file)
         

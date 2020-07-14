@@ -14,8 +14,6 @@ Value LATIME (\d+\/\d+)
 
 
 Start
-^Tunnel-id\s+Local\s+Remote\s+fvrf/ivrf\s+Status\s*
-^${TUNNELID}\s+${LOCAL}\s+${REMOTE}\s+${FVRFIVRF}\s+${STATUS}\s*
-^Encr:\s+${ENCR},\s+keysize:\s+${KEYSIZE},\s+PRF:\s+${PRF},\s+Hash:\s+${HASH},\s+DH\sGrp:${DHGR},\s+Auth\ssign:\s+${AUTHSIGN},\s+Auth\sverify:\s+${AUTHVERIFY}\s*
-^Life/Active\sTime:\s+${LATIME}\s+sec\s* -> Record Start
-EOF
+
+ ^Tunnel-id\s+${TUNNELID}\s+Local\s+${LOCAL}\s+Remote\s+ ${REMOTE}\s+fvrf/ivrf \s+${FVRFIVRF}\s+Status\s+${STATUS}\s* -> Record
+ 
