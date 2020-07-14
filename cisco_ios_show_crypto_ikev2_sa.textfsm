@@ -1,0 +1,21 @@
+Value TUNNELID (\d+)
+Value LOCAL (\d+\.\d+\.\d+\.\d+)
+Value REMOTE (\d+\.\d+\.\d+\.\d+)
+Value FVRFIVRF (\w+\/\w+)
+Value STATUS (\w+)
+Value ENCR (\w+)
+Value KEYSIZE (\d+)
+Value PRF (\w+)
+Value HASH (\w+)
+Value DHGRP (\w+)
+Value AUTHSIGN (\w+)
+Value AUTHVERIFY (\w+)
+Value LATIME (\d+\/\d+)
+
+
+Start
+^Tunnel-id\s+Local\s+Remote\s+fvrf/ivrf\s+Status\s*
+^${TUNNELID}\s+${LOCAL}\s+${REMOTE}\s+${FVRFIVRF}\s+${STATUS}\s*
+^Encr:\s+${ENCR},\s+keysize:\s+${KEYSIZE},\s+PRF:\s+${PRF},\s+Hash:\s+${HASH},\s+DH\sGrp:${DHGR},\s+Auth\ssign:\s+${AUTHSIGN},\s+Auth\sverify:\s+${AUTHVERIFY}\s*
+^Life/Active\sTime:\s+${LATIME}\s+sec\s* -> Record Start
+EOF
