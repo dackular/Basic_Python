@@ -1,2 +1,2 @@
-Tunnelid;Local;Remote;fvrfivrf;Status;Encr;keysize;PRF;
-1;10.0.33.2/500;10.0.35.2/500;none/none;READY;AES-CBC,;;;
+Tunnelid;Local;Remote;fvrfivrf;Status;Encr;keysize;PRF;Hash;DHGrp;Authsign;Authverify;LifeActive;
+1;10.0.33.2/500;10.0.35.2/500;none/none;READY;AES-CBC,;256,;SHA512,;;;;;;

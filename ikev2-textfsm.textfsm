@@ -6,8 +6,15 @@ Value Status (\w+)
 Value Encr (\S+)
 Value keysize (\S+)
 Value PRF (\S+)
+Value Hash (\S+)
+Value DHGrp (\S+)
+Value Authsign (\S+)
+Value Authverify (\S+)
+Value LifeActive (\d+\/\d+)
+
 
 Start
  ^${Tunnelid}\s+${Local}\s+${Remote}\s+${fvrfivrf}\s+${Status}\s*
- ^\s+Encr:\s+${Encr}\s+ -> Record
+ ^\s+Encr:\s+${Encr}\s+keysize:\s+${keysize}\s+PRF:\s+${PRF}\s*
+ ^\s+Hash:\s+${Hash}\s+DHGrp:\s+${DHGrp}\s+Auth sign:\s+${Authsign}\s+ -> Record
  
